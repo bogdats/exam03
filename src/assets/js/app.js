@@ -1,0 +1,57 @@
+import $ from 'jquery';
+import 'what-input';
+
+// Foundation JS relies on a global varaible. In ES6, all imports are hoisted
+// to the top of the file so if we used`import` to import Foundation,
+// it would execute earlier than we have assigned the global variable.
+// This is why we have to use CommonJS require() here since it doesn't
+// have the hoisting behavior.
+window.jQuery = $;
+// require('foundation-sites');
+
+// If you want to pick and choose which modules to include, comment out the above and uncomment
+// the line below
+import './lib/foundation-explicit-pieces';
+
+import './lib/slick.min.js';
+
+$(document).foundation();
+
+
+//Slider
+let imageSlider = $('.ba-slider');
+
+imageSlider.slick({
+    dots: true,
+    arrows: true,
+    speed: 100,
+    infinite: true,
+    adaptiveHeight: true,
+    autoplay: true,
+    arrows: true,
+    // slidesToShow: 2,
+    // slidesToScroll: 1
+});
+// End Slider
+
+//Slider Team
+// let imageSliderTeam = $('.ba-slider-team');
+
+// imageSliderTeam.slick({
+    // dots: true,
+    // arrows: true,
+    // speed: 100,
+    // infinite: true,
+    // adaptiveHeight: true,
+    // autoplay: true,
+    // arrows: true,
+    // slidesToShow: 3,
+    // slidesToScroll: 3
+// });
+// End Slider Team
+
+
+
+
+
+

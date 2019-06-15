@@ -1,0 +1,289 @@
+a, button{
+    transition: .3s ease-in;
+    transition-property: color, background-color, opacity;
+    svg{
+        fill:currentColor;
+    }
+}
+button, .button{
+    cursor: pointer;
+}
+
+h1{
+    font-family: ProximaNova;
+font-size: 72px;
+font-weight: 700;
+line-height: 60.22px;
+text-transform: uppercase;
+color: $primary-color;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.ba-main-menu{
+    font-family: ProximaNova;
+    font-size: 24px;
+font-weight: 400;
+line-height: 60.03px;
+text-transform: uppercase;
+color: #ffffff;
+    li+li{
+        margin-left: 25px;
+    }
+}
+
+.ba-intro{
+    height: 100%;
+    background: $light-gray url(../img/1bg.jpg) 50% no-repeat / cover; 
+    height: 100vh;
+}
+
+.ba-intro-text{
+    color: #fefdfd;
+font-family:  'PT Sans', sans-serif;
+font-size: 30px;
+font-style: italic;
+padding-top: 50px;
+
+}
+
+
+.ba-about-bg{
+   min-height: 555px; 
+}
+
+
+
+.ba-about{
+    height: 555px;
+    margin-top: 124px;
+    margin-bottom: 121px;
+    
+    }
+.ba-about-text{
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 70px;
+    button{
+        color: #7d7a7c;
+        border-color: #7d7a7c;
+        margin-top: 80px;
+        margin-left: 50%;
+        transform: translateX(-50%)
+    }
+}
+
+
+.ba-about-bg{
+    height: 100%;
+    background: $light-gray url(../img/about_bg.jpg) 50% no-repeat / cover;
+
+
+}
+
+.ba-works{
+    // background: url("{{root}}/assets/img/works-bg.jpg");
+    background: $light-gray url(../img/works-bg.jpg) 50% no-repeat / cover;
+    padding-bottom: 60px;
+    padding-top: 49px;    
+}
+
+.ba-team{
+    background-color: #ebebeb;
+    padding-bottom: 80px;
+    padding-top: 54px;    
+
+}
+
+.ba-icon{
+    height: 60px;
+    margin-bottom: 36px;
+}
+
+.ba-button{
+    height: 40px;
+    min-width: 170px;
+    border: 1px solid #fff;
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #fff;
+}
+
+.ba-textsub-main{
+    font-family: ProximaNova;
+    font-size: 36px;
+    font-weight: 400;
+    color: #fefcfd;
+    text-transform: uppercase;
+    margin-bottom: 68px;
+}
+
+.ba-textsub-team{
+    color: #665f60;
+}
+
+// .ba-team__box{
+//     background-color:#fff;
+//     color:currentColor;
+//     max-width:350px;
+//     margin:0 15px
+// }
+
+
+.ba-team-card{
+    width: 350px;
+height: 350px;
+background-color: #ffffff;
+// position: relative;
+}
+
+.ba-face-img{
+    position: absolute;
+    top: -80px;
+    max-width: 239px;
+    border-radius: 50%;
+    border: 10px solid #ebebeb;
+    
+}
+
+.ba-team-social{
+    height: 70px;
+    background-color: #9f9acf;
+}
+// Slick team
+
+.ba-slider-team{
+    
+        // margin-bottom: 80px;
+        // padding-left: 40px;
+        // width: 100%;
+        // // height: 546px;
+        // @include breakpoint(medium){
+            
+        //     width: 730px;
+        // }
+        // .slick-arrow{
+        //     position: absolute;
+        //     z-index: 3;
+        //     top: 50%;
+        //     height: 42px;
+        //     width: 20px;
+        //     background: url('data:image/svg+xml,\
+        //     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="42" viewBox="0 0 366 1024">\
+        //     <path fill="white" d="M358.286 310.857q0 7.429-5.714 13.143l-224.571 224.571 224.571 224.571q5.714 5.714 5.714 13.143t-5.714 13.143l-28.571 28.571q-5.714 5.714-13.143 5.714t-13.143-5.714l-266.286-266.286q-5.714-5.714-5.714-13.143t5.714-13.143l266.286-266.286q5.714-5.714 13.143-5.714t13.143 5.714l28.571 28.571q5.714 5.714 5.714 13.143z"></path>\
+        // </svg>');
+        //     font-size: 0;
+        // }
+        // .slick-prev{
+        //     left: 0;
+        //     @include breakpoint(1450){
+        //         left: -40%;
+        //     }
+            
+        // }
+        // .slick-next{
+        //     right: 0;
+        //     @include breakpoint(1450){
+        //         right: -40%;
+        //     }
+            
+        //     transform: rotate(180deg)
+        // }
+    
+    
+}
+///////////////////////////////////////////////////////// End Slick Team
+
+
+// Slider works
+
+.ba-slider{
+    margin-bottom: 80px;
+    width: 100%;
+    // height: 546px;
+    @include breakpoint(medium){
+        
+        width: 730px;
+    }
+    .slick-arrow{
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        height: 42px;
+        width: 20px;
+        background: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="42" viewBox="0 0 366 1024">\
+        <path fill="white" d="M358.286 310.857q0 7.429-5.714 13.143l-224.571 224.571 224.571 224.571q5.714 5.714 5.714 13.143t-5.714 13.143l-28.571 28.571q-5.714 5.714-13.143 5.714t-13.143-5.714l-266.286-266.286q-5.714-5.714-5.714-13.143t5.714-13.143l266.286-266.286q5.714-5.714 13.143-5.714t13.143 5.714l28.571 28.571q5.714 5.714 5.714 13.143z"></path>\
+    </svg>');
+        font-size: 0;
+    }
+    .slick-prev{
+        left: 0;
+        @include breakpoint(1450){
+            left: -40%;
+        }
+        
+    }
+    .slick-next{
+        right: 0;
+        @include breakpoint(1450){
+            right: -40%;
+        }
+        
+        transform: rotate(180deg)
+    }
+}
+
+////
+
+.slick-dots{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	li{
+        padding: 0 5px;
+        background: none;
+	}
+
+	button{
+		width: 10px;
+		height: 10px;
+		background: none;
+		font-size: 0;
+		// border: none;
+		border-radius: 50%;
+		border: 2px solid #fff;
+        padding: 0;
+        outline: none;
+        // display: block; 
+
+		&:hover, &:focus{
+			opacity: 0.3;
+			outline: none;
+		}
+	}
+	.slick-active{
+		background-color: #fff;
+	}
+}
+
+///////////////////////////////////////////////  Slider-works
+
+
+
+
+.ba-map{
+    height: 800px;
+    width: 1000px;
+}
+/////////////////////////
